@@ -43,7 +43,8 @@ def insert_data(request):
 @renderer_classes([JSONRenderer])
 def song_list(request):
     """
-    List all code snippets, or create a new snippet.
+    :param request:
+    :return: List of all song playlist with details & given with title shows the details of the song respectively.
     """
     title = request.GET.get('title', '')
     if title:
@@ -76,7 +77,8 @@ def song_list(request):
 @api_view(['GET', 'PUT'])
 def rate_song(request, pk):
     """
-    List all code snippets, or create a new snippet.
+    :param request:
+    :return: Select the song & give the ratings
     """
     data = request.data
     try:
