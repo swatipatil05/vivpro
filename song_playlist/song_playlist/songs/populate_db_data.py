@@ -9,7 +9,7 @@ from .models import Song
 def input_data_creation():
     temp_data = {}
     # input json path
-    filename = "C:\\Users\spatil12\Desktop\hello\hello_world\\app1\playlist.json"
+    filename = "json\\playlist.json"
     fp = open(filename)
     file_data = json.load(fp)
     fp.close()
